@@ -11,7 +11,7 @@ import toast from "react-hot-toast";
 
 export const AppContext = createContext();
 
-const currency = import.meta.VITE_CURRENCY;
+const currency = import.meta.env.VITE_CURRENCY;
 
 // return contextprovider tag
 export const AppContextProvider = ({ children }) => {
