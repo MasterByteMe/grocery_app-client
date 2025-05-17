@@ -1,6 +1,6 @@
 import { assets } from "../../assets/assets";
 import { useAppContext } from "../../context/AppContext";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 const SellerLayout = () => {
   const { setIsSeller } = useAppContext();
@@ -58,6 +58,7 @@ const SellerLayout = () => {
             </NavLink>
           ))}
         </div>
+        <Outlet />
       </div>
     </>
   );
